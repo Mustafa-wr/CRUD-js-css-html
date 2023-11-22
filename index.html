@@ -10,21 +10,21 @@
 			<h2>crud</h2>
 			<p>crud management system</p>
 		</div>
-
+		
 		<div class="inputs">
 			<input type="text" placeholder="title" id="title">
 			<div class="price">
-				<input type="number" id="price" placeholder="price">
-				<input type="number" id="taxes" placeholder="taxes">
-				<input type="number" id="ads" placeholder="ads">
-				<input type="number" id="discount" placeholder="discount">
-				<small id="total">10000</small>
+				<input onkeyup="get_total()" type="number" id="price" placeholder="price">
+				<input onkeyup="get_total()" type="number" id="taxes" placeholder="taxes">
+				<input onkeyup="get_total()" type="number" id="ads" placeholder="ads">
+				<input onkeyup="get_total()" type="number" id="discount" placeholder="discount">
+				<small id="total">22222</small>
 			</div>
 			<input type="number" placeholder="count" id="count">
 			<input type="category" id="category" placeholder="category">
 			<button id="submit">Create</button>
 		</div>
-
+		
 		<div class="outputs">
 			<div class="searchblock">
 				<input type="text" id="search" placeholder="search">
@@ -33,6 +33,7 @@
 					<button id="search_category">Search By category</button>
 				</div>
 			</div>
+			
 			<table>
 				<tr>
 					<th>id</th>
@@ -87,6 +88,7 @@
 				</tbody>
 			</table>
 		</div>
+		<script src="main.js"></script>
 
 	</div>
 	

@@ -84,7 +84,7 @@ input{
 	color: #fff;
 }
 input:focus{
-	border: 2px solid #352c2c;
+	border: 1px solid #352c2c;
 	border-radius: 9px;
 	background: #000;
 }
