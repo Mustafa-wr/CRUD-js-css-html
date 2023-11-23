@@ -145,5 +145,25 @@ function get_total(){
 }
 
 
+// create product
+let data_products;
+if (localStorage != null){
+	data_products = JSON.parse(localStorage.products);
+} else{
+	data_products = [];
+}
 
-
+submit.onclick = function() {
+	let new_product = {
+		title:title.value,
+		price:price.value,
+		taxes:taxes.value,
+		ads:ads.value,
+		discount:discount.value,
+		total:total.innerHTML,
+		count:count.value,
+		caegory:category.value,
+	}
+	data_products.push(new_product);
+	localStorage.setItem('products', JSON.stringify(data_products));
+}
