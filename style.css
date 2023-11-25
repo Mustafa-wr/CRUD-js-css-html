@@ -59,11 +59,11 @@
 body{
 	color: #fff;
 	font-family: monospace;
-
 }
 .crud{
 	width: 80%;
 	margin: auto;
+	color: #fff;
 }
 .head{
 	text-align: center;
@@ -133,6 +133,23 @@ table th{
 th,td{
 	padding: 5px 0;
 }
+
+#delete_all{
+	margin: 10px 0;
+}
+
+/* Light mode */
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+  
+/* Dark mode */
+body.dark-mode {
+	background-color: #1a1a1a;
+	color: #ffffff;
+}
+
 
 
 

@@ -27,13 +27,15 @@
 		
 		<div class="outputs">
 			<div class="searchblock">
-				<input type="text" id="search" placeholder="search">
+				<input type="text" onkeyup="search_data(this.value)" id="search" placeholder="search">
 				<div class="btn_search">
-					<button id="search_title">Search By title</button>
-					<button id="search_category">Search By category</button>
+					<button id="search_title" onclick="get_search_mood(this.id)">Search By title</button>
+					<button id="search_category" onclick="get_search_mood(this.id)">Search By category</button>
 				</div>
 			</div>
-			
+			<div id="delete_all">
+				
+			</div>
 			<table>
 				<tr>
 					<th>id</th>
@@ -48,47 +50,12 @@
 					<th>delete</th>
 				</tr>
 
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>samsung</td>
-						<td>2000</td>
-						<td>50</td>
-						<td>50</td>
-						<td>50</td>
-						<td>50</td>
-						<td>phone</td>
-						<td><button id="update">update</button></td>
-						<td><button id="delete">delete</button></td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>samsung</td>
-						<td>2000</td>
-						<td>50</td>
-						<td>50</td>
-						<td>50</td>
-						<td>50</td>
-						<td>phone</td>
-						<td><button id="update">update</button></td>
-						<td><button id="delete">delete</button></td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>samsung</td>
-						<td>2000</td>
-						<td>50</td>
-						<td>50</td>
-						<td>50</td>
-						<td>50</td>
-						<td>phone</td>
-						<td><button id="update">update</button></td>
-						<td><button id="delete">delete</button></td>
-					</tr>
+				<tbody id="body">
+					
 				</tbody>
 			</table>
 		</div>
-		
+
 		<script src="main.js"></script>
 
 	</div>
